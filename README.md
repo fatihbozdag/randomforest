@@ -61,11 +61,33 @@ output/
 
 ## Modeller ve Metotlar
 - **Random Forest**: Ölçek duyarsız, outlier'lara dayanıklı.
+  - n_estimators: **100**
+  - max_depth: **10**
+  - max_features: *sqrt*
+  - random_state: **42**
 - **Gradient Boosting (XGBoost fallback)**: Erken durma ile ayarlanmış.
+  - n_estimators: **100**
+  - learning_rate: **0.1**
+  - max_depth: **6**
+  - subsample: **0.8**
+  - colsample_bytree: **0.8**
 - **SVR**: RBF kernel, öznitelik ölçeklendirme ile.
-- **Sinir Ağı**: Küçük mimari `(64, 16)`, erken durma destekli.
+  - kernel: **rbf**
+  - C: **1.0**
+  - gamma: *scale*
+- **Sinir Ağı (MLPRegressor)**: Küçük mimari `(64, 16)`, erken durma destekli.
+  - hidden_layer_sizes: **(64,16)**
+  - activation: **relu**
+  - alpha (L2): **0.005**
+  - learning_rate_init: **0.001**
+  - early_stopping: **True**
 - **Ridge Regresyon**: α=10, polinom & etkileşim özellikleri ile.
+  - alpha: **10.0**
+  - solver: *auto*
+  - max_iter: **1000**
 - **Ensemble**: Oy veren regresör; ağırlık optimizasyonu yapılabilir.
+  - Base modeller: RF, GB, SVR, Ridge
+  - Ağırlıklar: **eşit (varsayılan)**, grid/bayesian optimizasyonu önerilir.
 
 ## Lisans
 MIT 
