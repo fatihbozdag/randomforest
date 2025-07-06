@@ -1,0 +1,49 @@
+WATER QUALITY ANALYSIS REPORT
+==================================================
+
+Generated on: 2025-07-07 02:00:38
+
+DATA SUMMARY
+--------------------
+Training samples: 82
+Test samples: 24
+Features: 108
+
+MODEL PERFORMANCE SUMMARY
+------------------------------
+
+RANDOM_FOREST:
+  R² Score: N/A
+  RMSE: N/A
+  MAE: N/A
+  MAPE: N/A
+
+GRADIENT_BOOSTING:
+  R² Score: N/A
+  RMSE: N/A
+  MAE: N/A
+  MAPE: N/A
+
+SVR:
+  R² Score: N/A
+  RMSE: N/A
+  MAE: N/A
+  MAPE: N/A
+
+NEURAL_NETWORK:
+  R² Score: N/A
+  RMSE: N/A
+  MAE: N/A
+  MAPE: N/A
+
+LINEAR_MODELS:
+  R² Score: N/A
+  RMSE: N/A
+  MAE: N/A
+  MAPE: N/A
+
+ENSEMBLE:
+  R² Score: N/A
+  RMSE: N/A
+  MAE: N/A
+  MAPE: N/A

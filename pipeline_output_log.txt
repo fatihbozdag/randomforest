@@ -1,0 +1,83 @@
+OFFICIAL BCG WATER QUALITY ANALYSIS
+================================================================================
+Using Official BCG (Biological Classification Group) Thresholds
+================================================================================
+
+1. Loading and preparing data...
+✓ Training data: (118, 6)
+✓ Test data: (47, 6)
+✓ Training split: 94 samples
+✓ Validation split: 24 samples
+✓ Test data: 47 samples
+✓ Target range: [0.000, 1.000]
+
+2. Training models...
+✓ Random Forest trained successfully
+✓ SVR trained successfully
+✓ Neural Network trained successfully
+✓ Linear Models trained successfully
+
+3. Evaluating 4 models...
+
+Model           RMSE     MAE      R²       CV-RMSE   
+------------------------------------------------------------
+Random Forest   0.1253   0.1074   0.6322   0.1659    
+SVR             0.1246   0.0916   0.6364   0.1792    
+Neural Network  0.1375   0.1147   0.5568   0.1691    
+Linear Models   0.1181   0.0946   0.6731   0.1563    
+
+4. Making predictions on test data...
+✓ Random Forest: 47 predictions made (range: 0.021-0.955)
+✓ SVR: 47 predictions made (range: 0.149-0.866)
+✓ Neural Network: 47 predictions made (range: 0.000-0.908)
+✓ Linear Models: 47 predictions made (range: 0.004-0.834)
+✓ Ensemble: 47 predictions made (range: 0.065-0.883)
+
+5. Generating comprehensive BCG report...
+✓ BCG comprehensive report: output/bcg_analysis/bcg_comprehensive_report_20250707_011230.txt
+✓ BCG predictions file: output/bcg_analysis/bcg_predictions_20250707_011230.xlsx
+
+================================================================================
+OFFICIAL BCG ANALYSIS SUMMARY
+================================================================================
+✓ Best performing model: Linear Models (RMSE: 0.1181)
+
+✓ Model rankings by RMSE:
+  1. Linear Models: RMSE=0.1181, R²=0.6731
+  2. SVR: RMSE=0.1246, R²=0.6364
+  3. Random Forest: RMSE=0.1253, R²=0.6322
+  4. Neural Network: RMSE=0.1375, R²=0.5568
+
+✓ BCG water quality distribution in test data:
+  Poor (BCG4): 17 stations (36.2%)
+  Moderate (BCG3): 16 stations (34.0%)
+  Good (BCG2): 6 stations (12.8%)
+  Bad (BCG5): 6 stations (12.8%)
+  High (BCG1): 2 stations (4.3%)
+
+✓ Prediction statistics:
+  Mean quality score: 0.405
+  Range: [0.065, 0.883]
+
+✓ Official BCG Classification Thresholds:
+  • BCG1 - High (0.80-1.00): Excellent water quality
+  • BCG2 - Good (0.60-0.79): Good water quality
+  • BCG3 - Moderate (0.40-0.59): Moderate water quality
+  • BCG4 - Poor (0.20-0.39): Poor water quality
+  • BCG5 - Bad (0.00-0.19): Bad water quality
+
+✓ All BCG results saved to: output/bcg_analysis/
+
+================================================================================
+OFFICIAL BCG ANALYSIS COMPLETED SUCCESSFULLY!
+================================================================================
+GENERATING RANDOM FOREST VISUALIZATIONS
+================================================================================
+Using BCG predictions file: output/bcg_analysis/bcg_predictions_20250707_011230.xlsx
+Generated: output/rf_prediction_distribution.png
+Generated: output/rf_bcg_distribution.png
+Generated: output/rf_tp_vs_prediction.png
+Generated: output/rf_top_stations.png
+================================================================================
+RANDOM FOREST VISUALIZATIONS GENERATED!
+================================================================================

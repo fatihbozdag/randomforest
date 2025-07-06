@@ -1,0 +1,88 @@
+WATER QUALITY ANALYSIS - OFFICIAL BCG CLASSIFICATION REPORT
+================================================================================
+
+Generated on: 2025-07-07 02:00:33
+
+EXECUTIVE SUMMARY
+----------------------------------------
+This analysis uses the official BCG (Biological Classification Group)
+thresholds for water quality classification. Multiple machine learning
+models were trained and evaluated to predict water quality scores.
+
+OFFICIAL BCG CLASSIFICATION THRESHOLDS
+--------------------------------------------------
+BCG1 - High (0.80-1.00):     Excellent water quality
+BCG2 - Good (0.60-0.79):     Good water quality
+BCG3 - Moderate (0.40-0.59): Moderate water quality
+BCG4 - Poor (0.20-0.39):     Poor water quality
+BCG5 - Bad (0.00-0.19):      Bad water quality
+
+DATASET INFORMATION
+----------------------------------------
+Training samples: 94
+Validation samples: 24
+Test samples: 47
+Features: 4 (TP, EC, DO, TIT)
+Target range: [0.050, 0.850]
+
+MODEL PERFORMANCE COMPARISON
+--------------------------------------------------------------------------------
+Model                RMSE       MAE        R²         CV-RMSE   
+--------------------------------------------------------------------------------
+Random Forest        0.1004     0.0852     0.6312     0.1322    
+SVR                  0.1013     0.0780     0.6241     0.1412    
+Neural Network       0.1156     0.0977     0.5105     0.1472    
+Linear Models        0.0914     0.0705     0.6943     0.1207    
+
+BEST PERFORMING MODEL: Linear Models
+  RMSE: 0.0914
+  R²: 0.6943
+
+CHEMICAL PARAMETERS EXPLANATION
+---------------------------------------------
+TP (Total Phosphorus): Nutrient pollution indicator
+  - High values indicate eutrophication risk
+  - Affects algae growth and oxygen depletion
+
+EC (Electrical Conductivity): Dissolved salts/minerals
+  - Indicates total dissolved solids concentration
+  - Affects water taste and agricultural use
+
+DO (Dissolved Oxygen): Critical for aquatic life
+  - Essential for fish and aquatic organisms
+  - Low levels indicate organic pollution
+
+TIT (Titration/Alkalinity): pH buffering capacity
+  - Water's resistance to pH changes
+  - Important for ecosystem stability
+
+TEST DATA BCG CLASSIFICATION SUMMARY
+---------------------------------------------
+Total predictions: 47
+Unique stations: 20
+
+BCG distribution:
+  Moderate (BCG3)   :  24 stations ( 51.1%)
+  Good (BCG2)       :  13 stations ( 27.7%)
+  Poor (BCG4)       :  10 stations ( 21.3%)
+
+Prediction statistics:
+  Mean quality score: 0.513
+  Std deviation: 0.130
+  Min score: 0.247
+  Max score: 0.760
+
+
+CONCLUSIONS AND MANAGEMENT RECOMMENDATIONS
+-------------------------------------------------------
+1. Water quality assessment based on official BCG thresholds
+   provides standardized classification for management decisions.
+
+2. Stations classified as BCG4 (Poor) or BCG5 (Bad) require
+   immediate attention and remediation measures.
+
+3. Regular monitoring and model updates recommended to track
+   water quality trends and intervention effectiveness.
+
+4. Chemical parameter analysis helps identify specific
+   pollution sources and appropriate treatment strategies.

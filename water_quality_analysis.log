@@ -1,0 +1,50 @@
+2025-07-07 00:32:33,964 - utils - INFO - Data processor initialized with random seed: 42
+2025-07-07 00:32:33,964 - utils - INFO - Loading datasets...
+2025-07-07 00:32:34,076 - utils - INFO - Training data loaded: (118, 6)
+2025-07-07 00:32:34,081 - utils - INFO - Test data loaded: (47, 6)
+2025-07-07 00:32:34,081 - utils - INFO - Target column identified: FUZZY
+2025-07-07 00:32:34,081 - utils - INFO - Validating data quality...
+2025-07-07 00:32:34,083 - utils - INFO - Data quality validation passed
+2025-07-07 00:32:34,083 - utils - INFO - Starting data preprocessing...
+2025-07-07 00:32:34,083 - utils - INFO - Column names standardized
+2025-07-07 00:32:34,084 - utils - INFO - Missing values in test data: {'fuzzy': 47}
+2025-07-07 00:32:34,086 - utils - INFO - Missing values handled
+2025-07-07 00:32:34,086 - utils - INFO - Replaced 7 outliers in tp with median
+2025-07-07 00:32:34,087 - utils - INFO - Replaced 6 outliers in ec with median
+2025-07-07 00:32:34,088 - utils - INFO - Outlier handling summary: {'tp': 7, 'ec': 6, 'do': 0, 'tit': 0}
+2025-07-07 00:32:34,109 - utils - INFO - Feature engineering completed
+2025-07-07 00:32:34,110 - utils - INFO - Data split completed:
+2025-07-07 00:32:34,110 - utils - INFO -   Training set: (82, 108)
+2025-07-07 00:32:34,110 - utils - INFO -   Validation set: (12, 108)
+2025-07-07 00:32:34,110 - utils - INFO -   Test set: (24, 108)
+2025-07-07 00:32:34,110 - utils - INFO - Preprocessing pipeline created
+2025-07-07 00:32:34,114 - utils - INFO - Preprocessing applied to all datasets
+2025-07-07 00:32:34,143 - utils - INFO - Feature statistics generated
+2025-07-07 00:32:34,143 - utils - INFO - Data preprocessing completed
+2025-07-07 00:38:31,704 - utils - INFO - Data processor initialized with random seed: 42
+2025-07-07 00:38:31,704 - utils - INFO - Loading datasets...
+2025-07-07 00:38:31,816 - utils - INFO - Training data loaded: (118, 6)
+2025-07-07 00:38:31,822 - utils - INFO - Test data loaded: (47, 6)
+2025-07-07 00:38:31,823 - utils - INFO - Target column identified: FUZZY
+2025-07-07 00:38:31,823 - utils - INFO - Validating data quality...
+2025-07-07 00:38:31,827 - utils - INFO - Data quality validation passed
+2025-07-07 00:38:31,828 - utils - INFO - Starting data preprocessing...
+2025-07-07 00:38:31,828 - utils - INFO - Column names standardized
+2025-07-07 00:38:31,829 - utils - INFO - Missing values in test data: {'fuzzy': 47}
+2025-07-07 00:38:31,832 - utils - INFO - Missing values handled
+2025-07-07 00:38:31,833 - utils - INFO - Replaced 7 outliers in tp with median
+2025-07-07 00:38:31,834 - utils - INFO - Replaced 6 outliers in ec with median
+2025-07-07 00:38:31,835 - utils - INFO - Outlier handling summary: {'tp': 7, 'ec': 6, 'do': 0, 'tit': 0}
+2025-07-07 00:38:31,860 - utils - INFO - Feature engineering completed
+2025-07-07 00:38:31,862 - utils - INFO - Data split completed:
+2025-07-07 00:38:31,862 - utils - INFO -   Training set: (82, 108)
+2025-07-07 00:38:31,862 - utils - INFO -   Validation set: (12, 108)
+2025-07-07 00:38:31,862 - utils - INFO -   Test set: (24, 108)
+2025-07-07 00:38:31,862 - utils - INFO - Preprocessing pipeline created
+2025-07-07 00:38:31,867 - utils - INFO - Preprocessing applied to all datasets
+2025-07-07 00:38:31,896 - utils - INFO - Feature statistics generated
+2025-07-07 00:38:31,897 - utils - INFO - Data preprocessing completed
+2025-07-07 00:38:32,657 - utils - INFO - Evaluating model: RandomForest
+2025-07-07 00:38:40,643 - utils - INFO - Evaluating model: SVR
+2025-07-07 00:38:40,751 - utils - INFO - Evaluating model: NeuralNetwork
+2025-07-07 00:38:40,918 - utils - INFO - Evaluating model: LinearModels
